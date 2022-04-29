@@ -42,3 +42,22 @@ document.write(unescape('%3C%76%69%64%65%6F%20%70%6F%73%74%65%72%3D%22%50%41%54%
         return true;
     }
 </script>
+        (function () {
+        (function a() {
+            try {
+                (function b(i) {
+                    if (('' + (i / i)).length !== 1 || i % 20 === 0) {
+                        (function () { }).constructor('debugger')()
+                    } else {
+                        debugger
+                    }
+                    b(++i)
+                }
+                )(0)
+            } catch (e) {
+                setTimeout(a, 5000)
+            }
+        }
+        )()
+    }
+    )();
